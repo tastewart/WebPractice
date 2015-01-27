@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+  <title>Grid 3</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style type="text/css">
+   * {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .grid {
+      background: white;
+      margin: 0 0 20px 0;
+    }
+    .grid:after {
+      /* Or @extend clearfix */
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    [class*='col-'] {
+      float: left;
+      padding-right: 20px;
+    }
+    .grid [class*='col-']:last-of-type {
+      padding-right: 0;
+    }
+
+    .col-2-3 {
+      width: 66.66%;
+    }
+
+    .col-1-3 {
+      width: 33.33%;
+    }
+
+    .col-1-2 {
+      width: 50%;
+    }
+
+    .col-1-4 {
+      width: 25%;
+    }
+
+    .col-1-8 {
+      width: 12.5%;
+    }
+
+    .col-3-4 {
+      width: 75%;
+    }
+
+    .module {
+      padding: 20px;
+      background: #eee;
+    }
+
+    /* Opt-in outside padding */
+    .grid-pad {
+      padding: 20px 0 20px 20px;
+    }
+    .grid-pad [class*='col-']:last-of-type {
+      padding-right: 20px;
+    }
+
+    body {
+      padding: 10px 50px 200px;
+    }
+
+    .left {
+      background-color: #E799A3;
+    }
+    .right{
+      background-color: #4E9258;
+    }
+    header {
+      height: 50px;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      border-top: 1px solid #e5e5e5;;
+      background-color: yellow;
+    }
+    .sideNav {
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none;
+    }
+  </style>    
+</head>
+
+<body>
+  <header>Header</header>
+  <div class="grid">
+    <div class="col-3-4 left">
+      <h1>Test Project</h1>
+      <p>This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test. This is a test.</p>
+      <p><a href="http://www.google.com">More information...</a></p>
+    </div>
+    <div class="col-1-4 right">
+      <ul class="sideNav">
+        <li><a href="ContactUs.html">Contact Us</a></li>
+        <li><a href="#">Links</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>This is a footer.</p>
+  </footer>
+
+
+
+
+</body>
+</html>
